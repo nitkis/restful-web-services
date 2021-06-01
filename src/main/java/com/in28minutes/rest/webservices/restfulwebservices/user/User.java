@@ -7,7 +7,7 @@ import java.util.Date;
 public class User {
     private Integer id;
 
-    @Size(min = 2)
+    @Size(min = 2, message = "name should contain at-least two characters")
     private String name;
 
     @Past
